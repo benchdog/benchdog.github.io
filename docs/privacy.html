@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>隐私政策 · 盯盘伴侣</title>
+  <style>
+    :root { --line: #e6e9ee; --txt: #1f2328; --txt2: #4a5361; --muted: #6b7480; --accent: #2f6feb; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #fff; color: var(--txt);
+      font: 15px/1.85 -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+      padding: 56px 22px 90px; -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; }
+    h1 { font-size: 26px; font-weight: 650; letter-spacing: -.4px; margin-bottom: 6px; }
+    .meta { color: var(--muted); font-size: 13px; margin-bottom: 30px; }
+    h2 {
+      font-size: 16.5px; font-weight: 650; margin: 34px 0 10px;
+      padding-top: 20px; border-top: 1px solid var(--line);
+    }
+    h2:first-of-type { border-top: none; padding-top: 0; }
+    p { margin-bottom: 11px; color: var(--txt2); }
+    ul { margin: 0 0 12px 20px; color: var(--txt2); }
+    li { margin-bottom: 6px; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0 16px; font-size: 14px; }
+    th, td { text-align: left; padding: 9px 12px; border: 1px solid var(--line); vertical-align: top; }
+    th { background: #f7f8fa; font-weight: 600; font-size: 13px; }
+    td { color: var(--txt2); }
+    code { background: #f2f4f7; border-radius: 4px; padding: 1px 5px; font-size: 13px; }
+    .box {
+      background: #f7f9fc; border: 1px solid var(--line); border-radius: 10px;
+      padding: 14px 18px; margin: 16px 0; font-size: 14px; color: var(--txt2);
+    }
+    .box b { color: var(--txt); }
+    a { color: var(--accent); }
+    footer { margin-top: 44px; color: var(--muted); font-size: 13px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>隐私政策</h1>
+    <div class="meta">适用产品：盯盘伴侣（Chrome / Edge 浏览器扩展）　·　最后更新：2026 年 11 月 5 日</div>
+
+    <div class="box">
+      <b>一句话总结：</b>不开启云同步时，这个扩展不收集任何个人信息，所有数据只存在你自己的浏览器里。
+      开启云同步时，只上传你的自选股、分组、到价提醒和显示偏好，以及一个用于区分设备的账号标识，不上传任何浏览记录或网页内容。
+    </div>
+
+    <h2>1. 我们收集哪些数据</h2>
+    <table>
+      <tr><th style="width:32%">数据类型</th><th style="width:22%">何时收集</th><th>用途</th></tr>
+      <tr>
+        <td>自选股列表、分组名称、到价提醒、显示偏好（配色、刷新频率、浮窗样式）</td>
+        <td>仅在你主动开启云同步后</td>
+        <td>在你登录的多个浏览器之间保持一致</td>
+      </tr>
+      <tr>
+        <td>账号标识：微信登录时为微信分配的 <code>openid</code>；未使用微信登录时为随机生成的同步码</td>
+        <td>仅在你主动开启云同步后</td>
+        <td>识别哪些数据属于同一个用户，不用于任何其他目的</td>
+      </tr>
+      <tr>
+        <td>行情请求所需的网络信息（IP 地址、User-Agent）</td>
+        <td>使用期间持续</td>
+        <td>由行情数据提供方的服务器自动记录，我们不留存</td>
+      </tr>
+    </table>
+
+    <h2>2. 我们明确不收集的数据</h2>
+    <ul>
+      <li>你的浏览历史、访问过哪些网址</li>
+      <li>任何网页正文、表单内容、账号密码、Cookie</li>
+      <li>你的姓名、手机号、身份证号、通讯地址</li>
+      <li>你在券商 App 或交易软件中的持仓、资金、成交记录</li>
+      <li>精确地理位置</li>
+    </ul>
+    <p>
+      网页悬浮球功能需要「读取和更改您在所有网站上的数据」这一权限，它<b>仅用于在页面上渲染一个悬浮球元素</b>。
+      我们不在任何网页上读取、解析或上传内容。
+    </p>
+
+    <h2>3. 数据存储在哪里</h2>
+    <ul>
+      <li><b>未开启云同步：</b>全部数据存放在浏览器提供的本地存储（<code>chrome.storage.local</code>）中，只存在于你自己的设备。开发者无法访问。</li>
+      <li><b>已开启云同步：</b>数据加密传输（HTTPS）后存储在中国境内的云服务器上，仅用于同步，不用于分析、画像或广告投放。</li>
+    </ul>
+
+    <h2>4. 第三方服务</h2>
+    <p>本扩展会向下列第三方发起请求，用于获取行情数据：</p>
+    <table>
+      <tr><th style="width:34%">第三方</th><th>用途</th><th>传输内容</th></tr>
+      <tr><td>公开行情接口（东方财富）</td><td>获取标的实时报价、K 线，以及全市场涨跌家数、涨跌停家数、两市成交额</td><td>仅股票代码与市场代码，不含任何用户标识</td></tr>
+      <tr><td>微信开放平台 / 微信小程序</td><td>仅在你选择微信扫码登录时用于获取 <code>openid</code></td><td>由微信客户端直接完成，我们不接触你的微信密码</td></tr>
+    </table>
+    <p>除上述情形及法律要求外，我们不会向任何第三方出售、出租或共享你的数据。</p>
+
+    <h2>5. 数据保留与删除</h2>
+    <ul>
+      <li>本地数据：在扩展内删除对应条目即从本地移除；卸载扩展会清除全部本地数据。</li>
+      <li>云端数据：在扩展内删除自选 / 提醒会同步删除云端对应记录；如需彻底删除账号及全部云端数据，可通过下方邮箱联系我们，我们会在 7 个工作日内处理。</li>
+      <li>删除标记（墓碑）会保留至多 30 天，用于让其他设备完成同步删除，之后自动清理。</li>
+    </ul>
+
+    <h2>6. 儿童隐私</h2>
+    <p>本产品不面向 14 周岁以下儿童，我们不会有意收集儿童的个人信息。</p>
+
+    <h2>7. 你的权利</h2>
+    <p>你可以随时查看、导出（扩展内「设置 → 导出」）、修改或删除你的数据。对数据处理有疑问，可发邮件至下方地址。</p>
+
+    <h2>8. 政策变更</h2>
+    <p>如本政策发生实质性变化，我们会在扩展更新说明中提示，并更新本页顶部的日期。</p>
+
+    <h2>9. 联系方式</h2>
+    <p>邮箱：<a href="mailto:your@email.com">your@email.com</a>（发布前请替换为你的真实邮箱）</p>
+
+    <h2>10. 免责声明</h2>
+    <p>
+      本产品是行情信息展示工具，不提供任何投资建议，不构成证券投资咨询服务，也不涉及任何交易、资金划转或代客理财。
+      行情数据来自公开接口，可能存在延迟，仅供看盘参考。市场有风险，投资决策及其后果由你自行承担。
+    </p>
+
+    <footer>© 2026 盯盘伴侣　·　本页可公开访问，用于满足 Chrome 网上应用商店的隐私政策披露要求。</footer>
+  </div>
+</body>
+</html>

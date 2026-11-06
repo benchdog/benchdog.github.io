@@ -1,0 +1,25 @@
+{
+  "_说明": "把本文件复制到 benchdog/benchdog.github.io 仓库根目录、命名为 promo.json 并 push，所有终端 30 分钟内自动生效。换广告内容只需要改这个文件再 push，不用发新版本。",
+  "_启用方法": "把 promo.enabled 改成 true，title/url 填你自己的页面；临时下线就改回 false",
+  "_字段": {
+    "enabled": "false = 全局下线（所有终端立刻不显示）；true = 按下面内容投放",
+    "label": "角标文字，最多 6 字，建议保留「推广」「赞助」标识",
+    "title": "必填，最多 40 字",
+    "desc": "可选，最多 80 字",
+    "url": "必填，http/https，指向你自己的合规页面。用 Bitly 等自带点击统计的短链时直接填短链",
+    "trackUrl": "可选，统计端点。点击时后台对它发一个 GET（带 ts 参数防缓存），用户仍打开 url。需要统计又没有 302 服务时用它",
+    "startsAt": "可选，ISO 8601。到点自动上线",
+    "endsAt": "可选，ISO 8601。到点自动下线"
+  },
+  "version": 1,
+  "promo": {
+    "enabled": false,
+    "label": "推广",
+    "title": "更多工具与更新",
+    "desc": "查看使用说明与版本记录",
+    "url": "https://example.com/notes",
+    "trackUrl": "",
+    "startsAt": null,
+    "endsAt": null
+  }
+}
