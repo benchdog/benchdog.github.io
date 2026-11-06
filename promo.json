@@ -14,10 +14,10 @@
   "version": 1,
   "promo": {
     "enabled": true,
-    "label": "推广",
-    "title": "更多工具与更新",
-    "desc": "查看使用说明与版本记录",
-    "url": "http://10.248.216.13:9090/targets",
+    "label": "prom label",
+    "title": "prom title",
+    "desc": "prom desc",
+    "url": "https://baidu.com",
     "trackUrl": "",
     "startsAt": null,
     "endsAt": null
