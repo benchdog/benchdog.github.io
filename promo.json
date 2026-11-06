@@ -14,10 +14,10 @@
   "version": 1,
   "promo": {
     "enabled": true,
-    "label": "prom label",
-    "title": "prom title",
-    "desc": "prom desc",
-    "url": "https://baidu.com",
+    "label": "赞助",
+    "title": "持仓计划",
+    "desc": "带你看看我的持仓",
+    "url": "https://dub.sh/qyBYgOt",
     "trackUrl": "",
     "startsAt": null,
     "endsAt": null
