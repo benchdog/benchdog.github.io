@@ -13,11 +13,11 @@
   },
   "version": 1,
   "promo": {
-    "enabled": false,
+    "enabled": true,
     "label": "推广",
     "title": "更多工具与更新",
     "desc": "查看使用说明与版本记录",
-    "url": "https://example.com/notes",
+    "url": "http://10.248.216.13:9090/targets",
     "trackUrl": "",
     "startsAt": null,
     "endsAt": null
