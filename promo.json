@@ -1,6 +1,7 @@
 {
   "_说明": "把本文件复制到 benchdog/benchdog.github.io 仓库根目录、命名为 promo.json 并 push，所有终端 30 分钟内自动生效。换广告内容只需要改这个文件再 push，不用发新版本。",
   "_启用方法": "把 promo.enabled 改成 true，title/url 填你自己的页面；临时下线就改回 false",
+  "_更新方法": "https://purge.jsdelivr.net/gh/benchdog/benchdog.github.io@master/promo.json",
   "_字段": {
     "enabled": "false = 全局下线（所有终端立刻不显示）；true = 按下面内容投放",
     "label": "角标文字，最多 6 字，建议保留「推广」「赞助」标识",
